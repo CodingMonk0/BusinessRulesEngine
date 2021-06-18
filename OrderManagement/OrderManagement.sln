@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManagement.RulesEngine", "OrderManagement.RulesEngine\OrderManagement.RulesEngine.csproj", "{A33CAAF8-501A-4DA0-A39F-0FC177BF1202}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManagement.RulesEngine.Test", "OrderManagement.RulesEngine.Test\OrderManagement.RulesEngine.Test.csproj", "{A6D55E46-4DE6-418C-ACD5-A41EA4C2D345}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A33CAAF8-501A-4DA0-A39F-0FC177BF1202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A33CAAF8-501A-4DA0-A39F-0FC177BF1202}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A33CAAF8-501A-4DA0-A39F-0FC177BF1202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A33CAAF8-501A-4DA0-A39F-0FC177BF1202}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6D55E46-4DE6-418C-ACD5-A41EA4C2D345}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6D55E46-4DE6-418C-ACD5-A41EA4C2D345}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6D55E46-4DE6-418C-ACD5-A41EA4C2D345}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6D55E46-4DE6-418C-ACD5-A41EA4C2D345}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00AC791A-E561-4FC0-9549-BA50DBC5BD28}
+	EndGlobalSection
+EndGlobal
