@@ -9,11 +9,10 @@ namespace OrderManagement.RulesEngine.Tests
     public class RulesEngineTest
     {
         [TestMethod]
-        public void ExecuteRule_WithBookTypeOrder_ExecuteBookOrderHandlerOnce()
+        public void ExecuteRule_WithBookTypeOrder_ExecuteOrderHandlerOnce()
         {
             // Arrange
             var type = ItemType.Book.ToString();
-            var handler = new BookOrderHandler();
             var order = new Order
             {
                 Id = Guid.NewGuid(),
@@ -27,15 +26,18 @@ namespace OrderManagement.RulesEngine.Tests
             };
 
             // Mock IOrderHandler
-            var orderHandlerMock = new Mock<IOrderHandler>(handler);
+            var orderHandlerMock = new Mock<IOrderHandler>();
+            orderHandlerMock.Setup(o => o.Handle(order.Item)).Verifiable();
 
+            // Mock IRuleRepository
             var rulesRepositoryMock = new Mock<IRuleRepository>();
             rulesRepositoryMock.Setup(o => o.GetRule(type)).Returns(orderHandlerMock.Object);
+           
             // Act
             var ruleEngine = new RulesEngine(rulesRepositoryMock.Object);
             ruleEngine.ExecuteRule(order);
+            
             // Assert
-
             orderHandlerMock.Verify(o => o.Handle(order.Item), Times.Once);
         }
     }
