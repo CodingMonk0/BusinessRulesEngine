@@ -21,6 +21,7 @@ namespace OrderManagement.RulesEngine
                     Console.WriteLine($"Started processing order {order.Id}, type: {order.Item.Type}");
                     rulesEngine.ExecuteRule(order);
                     Console.WriteLine($"Finished processing order {order.Id}");
+                    Console.WriteLine();
                 }
                 catch (Exception ex)
                 {
