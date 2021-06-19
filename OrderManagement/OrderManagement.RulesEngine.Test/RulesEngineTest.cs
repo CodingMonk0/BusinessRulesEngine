@@ -3,7 +3,7 @@ using Moq;
 using OrderManagement.RulesEngine.Models;
 using System;
 
-namespace OrderManagement.RulesEngine.Tests
+namespace OrderManagement.RulesEngine.Test
 {
     [TestClass]
     public class RulesEngineTest
